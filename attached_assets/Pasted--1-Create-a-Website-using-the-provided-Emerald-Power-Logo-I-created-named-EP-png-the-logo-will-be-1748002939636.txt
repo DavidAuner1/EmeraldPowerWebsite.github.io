@@ -1,0 +1,90 @@
+
+
+1. Create a Website using the provided Emerald Power Logo I created named EP.png, the logo will be a button that when clicked returns the user to the homepage, The logo will be in it own top bar at the top on the lefter part of the page, on the right side will be a drop down list named ‘Products’ in that drop down list will contain ‘Rotary or Static UPS solutions’, ‘Three Phase UPS Systems’, ‘Single Phase UPS Systems’, ‘Lighting Inverters’, and ‘Battery Conditioning Systems’. Each item in the list should be able to be clicked and open a new page dedicated to that project. 
+2. Next to ‘products’ on the top bar will be ‘Services’ when services is clicked it will open its own dedicated page that includes the exact info I included in the word doc named EP Service Offering - PM’s.docx, Also include pictures for the UPS service part and for the VRLA(Sealed) Battery Service part. 
+3. Next to ‘Services’ on the top bar will be ‘Recycling’ when recycling is clicked it will open its own dedicated page that includes the exact info I including in the pdf named Battery REcycling.pdf, the info can be made to sound better and highlight the dedication this company has towards being green, include pictures that include electric waste management. 
+4. Next to ‘Recycling’ will be a blue box ‘Get Quote’, when clicked it will open its own dedicated page that allows the user to input there name, phone, email, company,city, state, descriptions with 500 character limit, when the user hits submit it should use the mailto:davidauner1@gmail.com command anchor link 
+
+5. For the homepage,  it should start with a mission statement such as “Reliable Power
+Solutions
+for Critical Operations
+From 700VA single-phase to 3MW multi-module systems, we deliver uninterruptible power solutions that protect your critical infrastructure while advancing environmental sustainability.”, next highlight 98% Battery recycling rate, upto 3MW Power Solutions, over 25 years of industry experience, next reference the pdf named EP- 9 Power Problems.pdf and I included the info make it a 3x3 pictured list with small icon picture to represent and inside the boxes will be ‘9 Critical Power Problems’ 9 Critical Power Problems
+Our UPS solutions address every power quality issue that threatens your critical operations
+
+Power Failure
+Total utility power loss
+
+Caused by lightning strikes, downed power lines, grid overdemands, accidents and natural disasters.
+
+Standby UPS Solution
+Power Sag
+Short-term low voltage
+
+Triggered by startup of large loads, utility switching, equipment failure, and inadequate power service.
+
+Line Interactive UPS
+Power Surge
+High voltage spikes
+
+Lightning strikes can send voltages exceeding 6,000V, almost always resulting in data loss or hardware damage.
+
+True Online UPS
+Undervoltage
+Extended brownouts
+
+Intentional utility voltage reduction during peak demand or heavy loads exceeding supply capacity.
+
+Voltage Regulation
+Overvoltage
+Extended high voltage
+
+Rapid reduction in power loads, heavy equipment shutdown, or utility switching operations.
+
+Power Conditioning
+Line Noise
+EMI/RFI interference
+
+High frequency interference from transmitters, welding devices, printers, and lightning.
+
+EMI/RFI Filtering
+Frequency Variation
+Frequency instability
+
+Generator or co-generation sites being loaded and unloaded causing erratic operation.
+
+Frequency Stabilization
+Switching Transient
+Instantaneous voltage notch
+
+Normal duration shorter than spikes, generally in nanosecond range from switching operations.
+
+Transient Protection
+Harmonic Distortion
+Waveform distortion
+
+Caused by nonlinear loads like switch mode power supplies, variable speed motors, and office equipment.
+
+Power Conditioning
+
+6. After that we get to a 4x3 list of the products offered with a small picture to show it and the use cases, like this Technical Specifications Comparison
+System Type	Power Range	Applications	Key Features
+Single Phase	700 VA - 6 kVA	Workstations, Small Offices	TVSS, PDUs, Modular
+Three Phase	10 kVA - 3 MW	Data Centers, Hospitals	N+1 Redundancy, Parallel
+Rotary/Static	400 kVA - 2.7 MVA	Industrial, High Voltage	Flywheel, Diesel Options
+7. Next just under the list include ‘Batter Conditioning Systems’ with a small 2x2 boxes with small icons with info VRLA, Wet Cell, and Lithium-Ion battery systems with comprehensive monitoring and conditioning capabilities.
+
+VRLA Batteries
+Valve Regulated Lead Acid solutions with IEEE standard compliance
+
+Monitoring Systems
+Real-time monitoring and data center reporting capabilities
+
+Conditioning
+Battery conditioning systems for optimal performance
+
+Cabinet Solutions
+Rack and cabinet configurations for any installation
+8. Lastly at the bottom include the logo with the words  Clean Power for a Greener Tomorrow
+
+Leading provider of uninterruptible power supply solutions and critical power protection services.
+
