@@ -47,7 +47,7 @@ export default function Quote() {
       `Project Description:\n${formData.description}`
     );
     
-    const mailtoURL = `mailto:davidauner1@gmail.com?subject=${subject}&body=${body}`;
+    const mailtoURL = `mailto:ed@emeraldpwr.com?subject=${subject}&body=${body}`;
     window.location.href = mailtoURL;
   };
 
@@ -200,7 +200,7 @@ export default function Quote() {
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 emerald-blue mr-2" />
-                <span>davidauner1@gmail.com</span>
+                <span>ed@emeraldpwr.com</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 emerald-blue mr-2" />

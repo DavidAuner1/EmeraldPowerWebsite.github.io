@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
 import { Menu, Power, Battery, Zap, Lightbulb, Settings } from "lucide-react";
-import epLogo from "@assets/EP.png";
+import Logo from "@/components/ui/logo";
 
 export default function Header() {
   const [location] = useLocation();
@@ -25,7 +25,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="focus:outline-none focus:ring-2 focus:ring-emerald-blue rounded-lg">
-              <img src={epLogo} alt="Emerald Power Logo" className="h-12 w-auto" />
+              <Logo size="md" />
             </Link>
           </div>
 
