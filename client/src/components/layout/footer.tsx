@@ -1,4 +1,5 @@
 import epLogo from "@assets/EP.png";
+import Logo from "@/components/ui/logo";
 
 export default function Footer() {
   return (
