@@ -7,7 +7,7 @@ export default function BatteryConditioning() {
   const manufacturers = [
     {
       name: "Generex",
-      logo: "https://www.generex.de/wp-content/uploads/2019/04/generex-logo.png",
+      logo: generexLogo,
       url: "https://www.generex.de/",
       products: ["SmartBattery Systems", "Battery Monitoring", "Facility Management", "Data Center Software"]
     }
