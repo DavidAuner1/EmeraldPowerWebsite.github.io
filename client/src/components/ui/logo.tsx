@@ -28,13 +28,13 @@ export default function Logo({ className = "", size = "md" }: LogoProps) {
         </div>
         
         {/* Globe/Earth Icon - PNG Image */}
-        <div className="mt-1">
+        <div className="mt-0">
           <img 
             src={globeImage}
             alt="Earth Globe"
             width="40"
             height="40"
-            className="drop-shadow-sm"
+            className="drop-shadow-sm block object-contain"
           />
         </div>
       </div>

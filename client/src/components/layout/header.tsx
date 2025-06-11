@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
-import { Menu, Power, Battery, Zap, Lightbulb, Settings } from "lucide-react";
+import { Menu, Power, Battery, Zap, Lightbulb, Settings, Cylinder, Activity, Thermometer } from "lucide-react";
 import Logo from "@/components/ui/logo";
 
 export default function Header() {
@@ -11,11 +11,13 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const productItems = [
-    { title: "Rotary or Static UPS solutions", icon: Power },
-    { title: "Three Phase UPS Systems", icon: Zap },
-    { title: "Single Phase UPS Systems", icon: Battery },
+    { title: "Battery Energy Storage", icon: Battery },
+    { title: "Three Phase Rotary  UPS ", icon: Activity },
+    { title: "Three Phase Static UPS ", icon: Activity },
+    { title: "Single Phase UPS", icon: Zap },
+    { title: "Capacitor Banks", icon: Cylinder },
     { title: "Lighting Inverters", icon: Lightbulb },
-    { title: "Battery Conditioning Systems", icon: Settings },
+    { title: "Battery Conditioning", icon: Thermometer },
   ];
 
   return (
@@ -97,6 +99,7 @@ export default function Header() {
                         <item.icon className="h-4 w-4 text-emerald-blue" />
                         <span className="text-sm text-gray-700">{item.title}</span>
                       </div>
+      
                     ))}
                   </div>
 
