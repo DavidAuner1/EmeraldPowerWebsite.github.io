@@ -98,7 +98,7 @@ export default function ThreePhaseStaticUPS() {
           <p className="text-xl emerald-green font-semibold mb-6">Advanced static power protection with flywheel energy storage.</p>
           
           {/* Featured Manufacturers */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {manufacturers.map((manufacturer, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6 text-center">
