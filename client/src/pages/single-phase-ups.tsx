@@ -1,18 +1,20 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ExternalLink, Battery, Zap, Shield, TrendingUp } from "lucide-react";
+import eatonLogo from "@assets/EAton_1749638488093.png";
+import xtremeLogo from "@assets/ExtremePowerConversions_1749638498676.png";
 
 export default function SinglePhaseUPS() {
   const manufacturers = [
     {
       name: "Eaton",
-      logo: "https://www.eaton.com/content/dam/eaton/corporate/logos/eaton-logo.svg",
+      logo: eatonLogo,
       url: "https://www.eaton.com/us/en-us.html",
       products: ["UPS Power Management", "Power Distribution for IT", "Rackmount PDUs", "Surge Protection"]
     },
     {
       name: "Xtreme Power Conversion",
-      logo: "https://www.xpcc.com/wp-content/uploads/2019/04/xpcc-logo.png",
+      logo: xtremeLogo,
       url: "https://www.xpcc.com/",
       products: ["TVSS Devices", "PDUs", "Modular Solutions"]
     }

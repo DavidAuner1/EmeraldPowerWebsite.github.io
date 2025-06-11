@@ -1,20 +1,30 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ExternalLink, Battery, Zap, Shield, TrendingUp } from "lucide-react";
+import activePowerLogo from "@assets/ActivePower_1749638488090.png";
+import mitsubishiLogo from "@assets/MistobishiElectric_1749638512914.png";
+import toshibaLogo from "@assets/Toshiba_1749638508954.png";
+import toshiba4400Image from "@assets/4400_med_1749638451214.jpg";
 
 export default function ThreePhaseStaticUPS() {
   const manufacturers = [
     {
       name: "Active Power",
-      logo: "https://www.activepower.com/wp-content/uploads/2019/04/active-power-logo.png",
+      logo: activePowerLogo,
       url: "https://www.activepower.com/",
       products: ["CleanSource SMS Plus", "CleanSource Plus MMS", "CleanSource XT MMS", "CleanSource HD", "PowerHouse", "GenStart"]
     },
     {
       name: "Mitsubishi Critical",
-      logo: "https://mitsubishicritical.com/wp-content/uploads/2019/04/mitsubishi-critical-logo.png",
+      logo: mitsubishiLogo,
       url: "https://mitsubishicritical.com/",
       products: ["Three Phase UPS Systems", "Industrial UPS", "Medical Grade UPS"]
+    },
+    {
+      name: "Toshiba",
+      logo: toshibaLogo,
+      url: "https://www.toshiba.com/tic/",
+      products: ["4400 Series 3-Phase UPS", "Power Electronics Systems", "Industrial UPS Solutions"]
     }
   ];
 
@@ -232,6 +242,58 @@ export default function ThreePhaseStaticUPS() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Featured Product - Toshiba 4400 Series */}
+        <Card className="mb-12 shadow-lg">
+          <CardContent className="p-8">
+            <h2 className="text-3xl font-bold emerald-blue mb-6">Featured: Toshiba 4400 Series 3-Phase UPS</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <img 
+                  src={toshiba4400Image} 
+                  alt="Toshiba 4400 Series 3-Phase UPS"
+                  className="w-full h-80 object-cover rounded-lg shadow-md"
+                />
+              </div>
+              <div>
+                <div className="bg-red-50 p-4 rounded-lg mb-4">
+                  <img 
+                    src={toshibaLogo} 
+                    alt="Toshiba"
+                    className="h-12 mb-3"
+                  />
+                  <h3 className="text-xl font-bold mb-2">4400 Series Three Phase UPS</h3>
+                  <p className="text-gray-600 mb-4">High-performance three-phase UPS systems delivering reliable power protection for critical applications.</p>
+                </div>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="h-4 w-4 text-emerald-green mr-2" />
+                    Advanced digital signal processing technology
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="h-4 w-4 text-emerald-green mr-2" />
+                    High efficiency operation up to 96%
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="h-4 w-4 text-emerald-green mr-2" />
+                    Modular design for easy maintenance
+                  </li>
+                  <li className="flex items-center text-sm">
+                    <CheckCircle className="h-4 w-4 text-emerald-green mr-2" />
+                    Wide input voltage range tolerance
+                  </li>
+                </ul>
+                <Button 
+                  variant="outline" 
+                  onClick={() => window.open('https://www.toshiba.com/tic/power-electronics/uninterruptible-power-systems/three-phase/4400-series-3-phase-ups', '_blank')}
+                  className="text-emerald-blue border-emerald-blue hover:bg-emerald-blue hover:text-white"
+                >
+                  Learn More <ExternalLink className="ml-2 h-4 w-4" />
+                </Button>
               </div>
             </div>
           </CardContent>
