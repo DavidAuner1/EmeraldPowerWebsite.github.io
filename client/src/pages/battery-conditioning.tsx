@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ExternalLink, Battery, Zap, Shield, TrendingUp, Monitor, Database } from "lucide-react";
+import generexLogo from "@assets/Generex_1749638498690.png";
 
 export default function BatteryConditioning() {
   const manufacturers = [

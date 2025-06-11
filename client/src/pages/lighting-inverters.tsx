@@ -1,12 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ExternalLink, Battery, Zap, Shield, TrendingUp, Lightbulb } from "lucide-react";
+import controlledPowerLogo from "@assets/ControlledPowerCompany_1749638488092.png";
 
 export default function LightingInverters() {
   const manufacturers = [
     {
       name: "Trystar (Controlled Power Company)",
-      logo: "https://www.trystar.com/wp-content/uploads/2019/04/trystar-logo.png",
+      logo: controlledPowerLogo,
       url: "https://www.trystar.com/brands/controlled-power-company/",
       products: ["HV Series Inverters", "MedPowerX UPS", "Emergency Lighting", "Power Conditioners"]
     }

@@ -1,12 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ExternalLink, Battery, Zap, Shield, TrendingUp } from "lucide-react";
+import hitecLogo from "@assets/HitecPowerProtection_1749638498692.png";
 
 export default function ThreePhaseRotaryUPS() {
   const manufacturers = [
     {
       name: "Hitec Power Protection",
-      logo: "https://hitec-ups.com/wp-content/uploads/2019/04/hitec-logo.png",
+      logo: hitecLogo,
       url: "https://hitec-ups.com/",
       products: ["Rotary UPS with Motor Generator", "Diesel Rotary UPS", "FESS Integration"]
     }
