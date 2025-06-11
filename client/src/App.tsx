@@ -10,6 +10,13 @@ import Services from "@/pages/services";
 import Recycling from "@/pages/recycling";
 import Quote from "@/pages/quote";
 import NotFound from "@/pages/not-found";
+import BatteryEnergyStorage from "@/pages/battery-energy-storage";
+import ThreePhaseRotaryUPS from "@/pages/three-phase-rotary-ups";
+import ThreePhaseStaticUPS from "@/pages/three-phase-static-ups";
+import SinglePhaseUPS from "@/pages/single-phase-ups";
+import LightingInverters from "@/pages/lighting-inverters";
+import BatteryConditioning from "@/pages/battery-conditioning";
+import CapacitorBanks from "@/pages/capacitor-banks";
 
 function Router() {
   return (
@@ -21,6 +28,13 @@ function Router() {
           <Route path="/services" component={Services} />
           <Route path="/recycling" component={Recycling} />
           <Route path="/quote" component={Quote} />
+          <Route path="/battery-energy-storage" component={BatteryEnergyStorage} />
+          <Route path="/three-phase-rotary-ups" component={ThreePhaseRotaryUPS} />
+          <Route path="/three-phase-static-ups" component={ThreePhaseStaticUPS} />
+          <Route path="/single-phase-ups" component={SinglePhaseUPS} />
+          <Route path="/lighting-inverters" component={LightingInverters} />
+          <Route path="/battery-conditioning" component={BatteryConditioning} />
+          <Route path="/capacitor-banks" component={CapacitorBanks} />
           <Route component={NotFound} />
         </Switch>
       </main>

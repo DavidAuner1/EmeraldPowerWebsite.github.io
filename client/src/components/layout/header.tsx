@@ -11,13 +11,13 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const productItems = [
-    { title: "Battery Energy Storage", icon: Battery },
-    { title: "Three Phase Rotary  UPS ", icon: Activity },
-    { title: "Three Phase Static UPS ", icon: Activity },
-    { title: "Single Phase UPS", icon: Zap },
-    { title: "Capacitor Banks", icon: Cylinder },
-    { title: "Lighting Inverters", icon: Lightbulb },
-    { title: "Battery Conditioning", icon: Thermometer },
+    { title: "Battery Energy Storage", icon: Battery, href: "/battery-energy-storage" },
+    { title: "Three Phase Rotary UPS", icon: Activity, href: "/three-phase-rotary-ups" },
+    { title: "Three Phase Static UPS", icon: Power, href: "/three-phase-static-ups" },
+    { title: "Single Phase UPS", icon: Zap, href: "/single-phase-ups" },
+    { title: "Capacitor Banks", icon: Cylinder, href: "/capacitor-banks" },
+    { title: "Lighting Inverters", icon: Lightbulb, href: "/lighting-inverters" },
+    { title: "Battery Conditioning", icon: Thermometer, href: "/battery-conditioning" },
   ];
 
   return (
@@ -44,10 +44,12 @@ export default function Header() {
                       <div className="w-80 p-4">
                         <div className="grid gap-3">
                           {productItems.map((item, index) => (
-                            <div key={index} className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
-                              <item.icon className="h-5 w-5 text-emerald-blue" />
-                              <span className="text-sm font-medium text-gray-700">{item.title}</span>
-                            </div>
+                            <Link key={index} href={item.href}>
+                              <div className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                <item.icon className="h-5 w-5 text-emerald-blue" />
+                                <span className="text-sm font-medium text-gray-700">{item.title}</span>
+                              </div>
+                            </Link>
                           ))}
                         </div>
                       </div>
