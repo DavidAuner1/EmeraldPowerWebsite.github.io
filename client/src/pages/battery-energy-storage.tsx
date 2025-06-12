@@ -173,7 +173,7 @@ export default function BatteryEnergyStorage() {
             <h2 className="text-3xl font-bold emerald-blue mb-6">
               Where It's Used
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-6">
               {useCases.map((useCase, index) => (
                 <div
                   key={index}
@@ -198,6 +198,7 @@ export default function BatteryEnergyStorage() {
               Why This Solution
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
               {whyChoose.map((benefit, index) => (
                 <div key={index} className="flex items-start space-x-4">
                   <div className="p-3 bg-emerald-green rounded-lg">

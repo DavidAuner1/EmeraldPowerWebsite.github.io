@@ -86,8 +86,8 @@ export default function Header() {
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-80">
-                <div className="flex flex-col space-y-4 mt-8">
+              <SheetContent side="right" className="w-80 overflow-y-auto">
+                <div className="flex flex-col space-y-4 mt-8 pb-8">
                   <Link href="/" onClick={() => setIsOpen(false)}>
                     <Button variant="ghost" className="w-full justify-start text-left">
                       Home
@@ -97,11 +97,12 @@ export default function Header() {
                   <div className="space-y-2">
                     <div className="text-sm font-medium text-gray-500 px-4">Products</div>
                     {productItems.map((item, index) => (
-                      <div key={index} className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer mx-2">
-                        <item.icon className="h-4 w-4 text-emerald-blue" />
-                        <span className="text-sm text-gray-700">{item.title}</span>
-                      </div>
-      
+                      <Link key={index} href={item.href} onClick={() => setIsOpen(false)}>
+                        <div className="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer mx-2">
+                          <item.icon className="h-4 w-4 text-emerald-blue" />
+                          <span className="text-sm text-gray-700">{item.title}</span>
+                        </div>
+                      </Link>
                     ))}
                   </div>
 

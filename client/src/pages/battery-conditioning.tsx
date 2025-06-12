@@ -217,7 +217,7 @@ export default function BatteryConditioning() {
         <Card className="mb-12 shadow-lg">
           <CardContent className="p-8">
             <h2 className="text-3xl font-bold emerald-blue mb-6">Where It's Used</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-6">
               {useCases.map((useCase, index) => (
                 <div key={index} className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow">
                   <div className="text-4xl mb-3">{useCase.icon}</div>
