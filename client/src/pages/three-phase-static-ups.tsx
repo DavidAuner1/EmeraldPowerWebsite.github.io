@@ -302,7 +302,7 @@ export default function ThreePhaseStaticUPS() {
         {/* Active Power Products */}
         <Card className="mb-12 shadow-lg">
           <CardContent className="p-8">
-            <h2 className="text-3xl font-bold emerald-blue mb-6">Active Power FESS Solutions</h2>
+            <h2  className="text-3xl font-bold text-center emerald-blue mb-6">ACTIVE POWER - MITSUBISHI - TOSHIBA</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {activePowerProducts.map((product, index) => (
