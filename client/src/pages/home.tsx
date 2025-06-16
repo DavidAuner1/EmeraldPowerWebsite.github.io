@@ -240,33 +240,133 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Technical Specifications */}
+      {/* Products */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Technical Specifications Comparison</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Products</h2>
             <p className="text-lg text-gray-600">Complete power solutions for every application</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((product, index) => (
-              <Card key={index} className={`${product.bgColor} text-white overflow-hidden hover:shadow-lg transition-shadow`}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Link href="/battery-energy-storage">
+              <Card className="hover:shadow-lg transition-shadow cursor-pointer">
                 <div className="relative">
                   <img 
-                    src={product.image} 
-                    alt={`${product.title} Systems`} 
-                    className="w-full h-32 object-cover"
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                    alt="Battery Energy Storage" 
+                    className="w-full h-48 object-cover"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="text-xl font-bold">Battery Energy Storage</h3>
+                    <p className="text-sm">Saft/Total Energies • EPC Power</p>
+                  </div>
                 </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{product.title}</h3>
-                  <div className="text-yellow-200 font-semibold mb-2">{product.range}</div>
-                  <p className="text-sm mb-3 text-gray-100">{product.applications}</p>
-                  <div className="text-xs text-gray-200">{product.features}</div>
-                </CardContent>
               </Card>
-            ))}
+            </Link>
+
+            <Link href="/three-phase-static-ups">
+              <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+                <div className="relative">
+                  <img 
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                    alt="Three Phase Static UPS" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="text-xl font-bold">Three Phase Static UPS</h3>
+                    <p className="text-sm">Active Power • Mitsubishi • Toshiba</p>
+                  </div>
+                </div>
+              </Card>
+            </Link>
+
+            <Link href="/three-phase-rotary-ups">
+              <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+                <div className="relative">
+                  <img 
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                    alt="Three Phase Rotary UPS" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="text-xl font-bold">Three Phase Rotary UPS</h3>
+                    <p className="text-sm">Hitec Power Protection</p>
+                  </div>
+                </div>
+              </Card>
+            </Link>
+
+            <Link href="/single-phase-ups">
+              <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+                <div className="relative">
+                  <img 
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                    alt="Single Phase UPS" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="text-xl font-bold">Single Phase UPS</h3>
+                    <p className="text-sm">Eaton • Xtreme Power Conversion</p>
+                  </div>
+                </div>
+              </Card>
+            </Link>
+
+            <Link href="/lighting-inverters">
+              <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+                <div className="relative">
+                  <img 
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                    alt="Lighting Inverters" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="text-xl font-bold">Lighting Inverters</h3>
+                    <p className="text-sm">Trystar/Controlled Power Company</p>
+                  </div>
+                </div>
+              </Card>
+            </Link>
+
+            <Link href="/battery-conditioning">
+              <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+                <div className="relative">
+                  <img 
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                    alt="Battery Conditioning" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="text-xl font-bold">Battery Conditioning</h3>
+                    <p className="text-sm">Generex Systems</p>
+                  </div>
+                </div>
+              </Card>
+            </Link>
+
+            <Link href="/capacitor-banks">
+              <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+                <div className="relative">
+                  <img 
+                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300" 
+                    alt="Capacitor Banks" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="text-xl font-bold">Capacitor Banks</h3>
+                    <p className="text-sm">Power Factor Correction</p>
+                  </div>
+                </div>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>

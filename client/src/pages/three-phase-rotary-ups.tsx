@@ -9,6 +9,10 @@ import {
   TrendingUp,
 } from "lucide-react";
 import hitecLogo from "@assets/HitecPowerProtection_1749638498692.png";
+import hitec1Image from "@assets/1hitec_1750054560925.jpg";
+import hitec2Image from "@assets/2hitec_1750054560927.jpg";
+import hitec3Image from "@assets/3hitec_1750054566229.jpg";
+import hitec4Image from "@assets/4hitec_1750054595627.png";
 
 import hitecgen from "@assets/hitecgen.jpg";
 

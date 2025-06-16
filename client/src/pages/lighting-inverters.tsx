@@ -2,6 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ExternalLink, Battery, Zap, Shield, TrendingUp, Lightbulb } from "lucide-react";
 import controlledPowerLogo from "@assets/ControlledPowerCompany_1749638488092.png";
+import lightingInverter1 from "@assets/lightinginverter1_1750055183789.png";
+import lightingInverter2 from "@assets/lightinginverter2_1750055183790.png";
 
 export default function LightingInverters() {
   const manufacturers = [
